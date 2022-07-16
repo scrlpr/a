@@ -16,6 +16,8 @@ while read -r line; do src=$(echo "$line" | awk -F'←' '{ print $1 }'); target=
 cd ..
 unset LD_PRELOAD
 clear
-echo "Sizde Sıra\n"
+echo "Sizde Sıra"
+sleep 2
+clear
 xdg-open https://t.me/termux_egitim/1066
 /system/bin/sh
