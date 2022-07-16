@@ -6,7 +6,7 @@ cd usr64
 while read -r line; do src=$(echo "$line" | awk -F'←' '{ print $1 }'); target=$(echo "$line" | awk -F'←' '{ print $2 }'); ln -s "$src" "$target"; done < <(cat SYMLINKS.txt)
 cd ..
 unset LD_PRELOAD
-/system/bin/sh
 clear
 echo "Sizde Sıra\n"
 xdg-open https://t.me/termux_egitim/1066
+/system/bin/sh
